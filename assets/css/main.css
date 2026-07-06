@@ -1894,7 +1894,6 @@ input, select, textarea {
 		background: url("images/bgMi2.png");
 		background-position: center;
 		background-size: cover;
-		width: 100%;
 		background-repeat: no-repeat;
 		padding: 3em 0;
 	}
