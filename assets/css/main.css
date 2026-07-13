@@ -2039,12 +2039,13 @@ input, select, textarea {
 
 		.logo {
 	display: inline-block;
-	vertical-align: middle; /* 👈 Centers it vertically inside the navbar */
-	max-width: 140px;       /* 👈 Sized down slightly from 160px so it fits safely */
-	height: 55px;           /* 👈 Reduced from 80px to 55px to stop the layout overflow */
+	vertical-align: top;
+	max-width: 160px;
+	height: 80px;
 	margin-right: 20px;
-	margin-top: 10px;       /* 👈 Increased slightly to push it perfectly into the center */
+	margin-top: 1px; 
 	margin-left: 10px;   
+	pointer-events: none; /* 👈 ADD THIS: Tells the phone to let clicks pass straight through the logo box */
 }
 
 		#header h1 {
