@@ -1899,15 +1899,15 @@ input, select, textarea {
 	}
 
 	#header-wrapper-venue {
-		background: url("../../images/milanonavigli.jpg");
+		background: url("../../images/toledo-elgreco.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
         padding: 3em 0;
 	}
 
-	#header-wrapper-participants {
-        background: url("../../images/milano_sunset.jpg");
+	#header-wrapper-people {
+        background: url("../../images/toledo-day1.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1915,7 +1915,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-abstract {
-        background:  url("../../images/milano_buildings.jpg");
+        background:  url("../../images/toledo-sunset2.jpeg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: top;
@@ -1923,7 +1923,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-scientific {
-        background:  url("../../images/milanoportavenezia.jpg");
+        background:  url("../../images/toledo-bridge-day.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1931,7 +1931,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-poster {
-        background:  url("../../images/navigli2.jpg");
+        background:  url("../../images/toledo-bridge-night2.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1939,7 +1939,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-social {
-        background:  url("../../images/galleria.jpg");
+        background:  url("../../images/toledo-bridge-night3.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -2041,10 +2041,10 @@ input, select, textarea {
 		.logo {
 			display: inline-block;
 			vertical-align: top;
-			max-width: 100px;
-			height: 50px;
+			max-width: 160px;
+			height: 80px;
 			margin-right: 20px;
-			margin-top: 18px; 
+			margin-top: 1px; 
 			margin-left: 10px;   /* if you want it vertically middle of the navbar. */
 		}
 
