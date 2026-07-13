@@ -1913,6 +1913,7 @@ input, select, textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		width: 100%;
        padding: 3em 0;
     }
 
@@ -1921,6 +1922,7 @@ input, select, textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: top;
+		width: 100%;
         padding: 3em 0;
     }
 
@@ -1929,6 +1931,7 @@ input, select, textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		width: 100%;
         padding: 3em 0;
     }
 
@@ -1937,6 +1940,7 @@ input, select, textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		width: 100%;
         padding: 3em 0;
     }
 
@@ -1945,18 +1949,11 @@ input, select, textarea {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
+		width: 100%;
         padding: 3em 0;
     }
 
 
-	#header-wrapper-coc {
-        background:  url("../../images/toledo-night1.jpg");
-        background-position: top left, center center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: top;
-        padding: 3em 0;
-    }
 
 	#main-wrapper {
 		background: #fff;
