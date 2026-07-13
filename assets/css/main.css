@@ -2046,6 +2046,7 @@ input, select, textarea {
 	margin-top: 1px; 
 	margin-left: 10px;   
 	pointer-events: none; /* 👈 ADD THIS: Tells the phone to let clicks pass straight through the logo box */
+			z-index: 1; 
 }
 
 		#header h1 {
