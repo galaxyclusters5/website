@@ -2035,7 +2035,7 @@ input, select, textarea {
 			text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
 		}
 
-		.logo {
+#logo {
     /* Make the link a block element with a size */
     display: block;
     width: 200px;  /* Adjust this to match your logo's width */
@@ -2054,6 +2054,7 @@ input, select, textarea {
     /* Optional: add a background color if the image has transparency */
     /* background-color: #ffffff; */
 }
+
 
 		#header h1 {
 			position: absolute;
