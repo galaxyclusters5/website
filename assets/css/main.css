@@ -2194,17 +2194,17 @@ input, select, textarea {
 
 		/* Nav */
 
-			#page-wrapper {
-				-moz-backface-visibility: hidden;
-				-webkit-backface-visibility: hidden;
-				-ms-backface-visibility: hidden;
-				backface-visibility: hidden;
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
-				transition: transform 0.5s ease;
-				padding-bottom: 1px;
-			}
+#page-wrapper {
+-moz-backface-visibility: hidden;
+-webkit-backface-visibility: hidden;
+-ms-backface-visibility: hidden;
+backface-visibility: hidden;
+-moz-transition: -moz-transform 0.5s ease;
+-webkit-transition: -webkit-transform 0.5s ease;
+-ms-transition: -ms-transform 0.5s ease;
+transition: transform 0.5s ease;
+padding-bottom: 1px;
+}
 
 			#titleBar {
 				-moz-backface-visibility: hidden;
