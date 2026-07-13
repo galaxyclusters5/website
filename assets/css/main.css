@@ -229,13 +229,11 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
-			.container {
-				width: 100%;
-				max-width: 100%;
-			}
-
-		}
+    #banner {
+        /* Changed the 3rd value (bottom padding) from 40px to 160px */
+        padding: 40px 20px 160px 20px; 
+    }
+}
 
 /* Row */
 
