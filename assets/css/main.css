@@ -2051,7 +2051,7 @@ input, select, textarea {
     /* This ensures the logo scales to fit within the box */
     background-size: contain;     
     /* Optional: add a background color if the image has transparency */
-    /* background-color: #ffffff; */
+    background-color: yellow; 
 }
 
 
