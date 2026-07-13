@@ -1900,15 +1900,15 @@ input, select, textarea {
 	}
 
 	#header-wrapper-venue {
-		background: url("../../images/toledo-elgreco.jpg");
+		background: url("../../images/milanonavigli.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
         padding: 3em 0;
 	}
 
-	#header-wrapper-people {
-        background: url("../../images/toledo-day1.jpg");
+	#header-wrapper-participants {
+        background: url("../../images/milano_sunset.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1916,7 +1916,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-abstract {
-        background:  url("../../images/toledo-sunset2.jpeg");
+        background:  url("../../images/milano_buildings.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: top;
@@ -1924,7 +1924,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-scientific {
-        background:  url("../../images/toledo-bridge-day.jpg");
+        background:  url("../../images/milanoportavenezia.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1932,7 +1932,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-poster {
-        background:  url("../../images/toledo-bridge-night2.jpg");
+        background:  url("../../images/navigli2.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
@@ -1940,7 +1940,7 @@ input, select, textarea {
     }
 
 	#header-wrapper-social {
-        background:  url("../../images/toledo-bridge-night3.jpg");
+        background:  url("../../images/galleria.jpg");
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
