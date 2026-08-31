@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 	<head>
 		<title>Cluster5 | Venue</title>
@@ -7,17 +6,104 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<style>
+			.lowercase {
+				text-transform: lowercase;
+			}
+			
+			/* Map Styling */
 			.map-container {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				width: 100%;
-				height: 100%;
+				margin-bottom: 40px;
 			}
-		</style>
-		<style>
-			.lowercase {
-				text-transform: lowercase;
+			.map-container iframe {
+				border-radius: 8px;
+				box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+			}
+
+			/* Warning Alert Box */
+			.warning-box {
+				background-color: #fff3cd;
+				color: #856404;
+				border-left: 5px solid #ffc107;
+				padding: 15px 20px;
+				border-radius: 4px;
+				margin-bottom: 25px;
+				font-size: 0.95em;
+				line-height: 1.5;
+			}
+			.warning-box strong {
+				color: #d32f2f;
+				font-weight: 800;
+			}
+
+			/* Hotel Card Grid */
+			.hotel-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+				gap: 20px;
+				margin-top: 20px;
+				margin-bottom: 40px;
+			}
+
+			.hotel-card {
+				background: #fdfdfd;
+				padding: 24px;
+				border-radius: 8px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+				transition: all 0.3s ease;
+				border-top: 4px solid #4285F4;
+				display: flex;
+				flex-direction: column;
+			}
+
+			.hotel-card:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+				background: #ffffff;
+			}
+
+			.hotel-name {
+				font-weight: 800;
+				font-size: 1.2em;
+				color: #333333;
+				margin-bottom: 12px;
+				text-decoration: none !important;
+				display: inline-block;
+			}
+
+			.hotel-name:hover {
+				color: #4285F4;
+			}
+
+			.hotel-detail {
+				font-size: 0.9em;
+				color: #666666;
+				margin-bottom: 8px;
+				display: flex;
+				align-items: flex-start;
+				line-height: 1.4;
+			}
+
+			.hotel-detail i {
+				color: #4285F4;
+				margin-right: 10px;
+				margin-top: 3px;
+				width: 16px;
+				text-align: center;
+			}
+
+			.hotel-detail a {
+				color: #666666;
+				text-decoration: none;
+				transition: color 0.2s;
+			}
+
+			.hotel-detail a:hover {
+				color: #0d47a1;
+				text-decoration: underline;
 			}
 		</style>
 	</head>
@@ -77,84 +163,115 @@
 
 										<article>
 										
-											<p>The conference  will take place at the <a href="https://www.adrmi1.cnr.it/centro-congressi.html" target="_blank"><b>CNR congress center</b></a>, in Milan. 
-											<br /> &#128205; via Corti 12  Milano</p>
+											<p style="text-align: center; font-size: 1.1em; margin-bottom: 20px;">
+												The conference will take place at the <a href="https://www.adrmi1.cnr.it/centro-congressi.html" target="_blank"><b>CNR congress center</b></a> in Milan.<br/>
+												<i class="fa fa-map-marker" style="color: #d32f2f; margin-right: 5px;"></i> Via Corti 12, Milano
+											</p>
+											
 											<div class="map-container">
-												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.4670633267224!2d9.229030911837622!3d45.480538570953534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6f6e3d11b21%3A0xf33390d3cd789afe!2sVia%20Alfonso%20Corti%2C%2012%2C%2020133%20Milano%20MI!5e0!3m2!1sit!2sit!4v1768151986306!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2797.4670633267224!2d9.229030911837622!3d45.480538570953534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c6f6e3d11b21%3A0xf33390d3cd789afe!2sVia%20Alfonso%20Corti%2C%2012%2C%2020133%20Milano%20MI!5e0!3m2!1sit!2sit!4v1768151986306!5m2!1sit!2sit" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 											</div>
 
-											<!-- <h4><br \>More information</h4> -->
+											<hr style="border: 0; height: 1px; background: #e0e0e0; margin: 40px 0;">
+
+											<header class="major" style="text-align: center;">
+												<h3>Accommodation</h3>
+											</header>
 											
+											<div class="warning-box">
+												<strong><i class="fa fa-exclamation-triangle"></i> Warning!</strong> We have not hired any company to take care of travel arrangements. If anyone contacts you about this, it is a scam.
+											</div>
 											
-										<h3>Accomodation</h3>
-										<p> <span style="color:red;">Warning!</span> We have not hired any company to take care of travel arrangements. If anyone contacts you about this, it is a scam. </p> 
-										<p> Milan offers a wide range of hotels, apartments, and other accommodation options. Please note that September is still peak tourist season in the city, and availability may therefore be limited. 
-										We strongly recommend booking your accommodation as early as possible. Most hotels offer free cancellation up to a few days before arrival. <br></br>
-										The following hotels offer special rates for attendees of conferences held at the CNR Congress Center. <br></br>
-										</p>	
-										<br/>
-										<ul align="justify" style="margin-top:-30px;">
-
+											<p style="margin-bottom: 30px;"> 
+												Milan offers a wide range of hotels, apartments, and other accommodation options. Please note that September is still peak tourist season in the city, and availability may therefore be limited. We strongly recommend booking your accommodation as early as possible. Most hotels offer free cancellation up to a few days before arrival.<br/><br/>
+												The following hotels offer special rates for attendees of conferences held at the CNR Congress Center.
+											</p>	
 											
-										<li> <a href="https://www.hotel-sanfrancisco.it"  target="_blank"> <b>Hotel San Francisco</b></a><br/>
-										<a href="https://maps.app.goo.gl/yPex3y2kRiRAkWJM9" target="_blank"><i class='fas fa-map-marker-alt' style='font-size:22px'></i></a>
-										Viale Lombardia 55, 20131, Milan, Italy</br>
-										<a href="callto: +39022360302">&#128222;</a> +39 02 2360302</br>
-										<a href="mailto:INFO@HOTEL-SANFRANCISCO.IT"><i class="fa fa-envelope" style="font-size:20px"></i></a>INFO@HOTEL-SANFRANCISCO.IT
-										</li><br/>
-										
-									    <li> <a href="https://hotelgammamilano.it/"  target="_blank"> <b>Hotel Gamma</b></a><br/>
-										<a href="https://maps.app.goo.gl/rhsLWZPa48bR4gQf6" target="_blank"><i class='fas fa-map-marker-alt' style='font-size:22px'></i></a> Via Peroni 85, 20133, Milan, Italy</br>
-										<a href="callto:+39 02 26413152">&#128222;</a> +39 02 26413152</br>
-										<a href="mailto:info@hotelgammamilano.it"><i class="fa fa-envelope" style="font-size:20px"></i></a>	 info@hotelgammamilano.it
-										</li><br/>
-										
-										<li> <a href="https://hotellombardia.com"  target="_blank"> <b>Hotel Lombardia</b></a><br/>
-										<a href="https://maps.app.goo.gl/UBFpTEoFWePKxJVH8" target="_blank"><i class='fas fa-map-marker-alt' style='font-size:22px'></i></a>
-										Viale Lombardia 74, 20131, Milan, Italy.</br>
-										<a href="callto:+39 02 2824849">&#128222;</a> +39 02 2824849</br>
-										<a href="mailto:info@hotellombardia.com"><i class="fa fa-envelope" style="font-size:20px"></i></a>	info@hotellombardia.com
-										</li><br/>
+											<!-- Styled Hotel Grid -->
+											<div class="hotel-grid">
+												
+												<!-- Hotel 1 -->
+												<div class="hotel-card">
+													<a href="https://www.hotel-sanfrancisco.it" target="_blank" class="hotel-name">Hotel San Francisco</a>
+													<div class="hotel-detail">
+														<i class="fa fa-map-marker"></i> 
+														<span><a href="https://maps.app.goo.gl/yPex3y2kRiRAkWJM9" target="_blank">Viale Lombardia 55, 20131, Milan, Italy</a></span>
+													</div>
+													<div class="hotel-detail">
+														<i class="fa fa-phone"></i> 
+														<span><a href="tel:+39022360302">+39 02 2360302</a></span>
+													</div>
+													<div class="hotel-detail">
+														<i class="fa fa-envelope"></i> 
+														<span><a href="mailto:INFO@HOTEL-SANFRANCISCO.IT">INFO@HOTEL-SANFRANCISCO.IT</a></span>
+													</div>
+												</div>
 
-										<li> <a href="https://www.marriott.com/it/hotels/milcy-courtyard-milano-linate/overview/"  target="_blank"> <b>COURTYARD BY MARRIOTT Milano Linate</b></a><br/>
+												<!-- Hotel 2 -->
+												<div class="hotel-card">
+													<a href="https://hotelgammamilano.it/" target="_blank" class="hotel-name">Hotel Gamma</a>
+													<div class="hotel-detail">
+														<i class="fa fa-map-marker"></i> 
+														<span><a href="https://maps.app.goo.gl/rhsLWZPa48bR4gQf6" target="_blank">Via Peroni 85, 20133, Milan, Italy</a></span>
+													</div>
+													<div class="hotel-detail">
+														<i class="fa fa-phone"></i> 
+														<span><a href="tel:+390226413152">+39 02 26413152</a></span>
+													</div>
+													<div class="hotel-detail">
+														<i class="fa fa-envelope"></i> 
+														<span><a href="mailto:info@hotelgammamilano.it">info@hotelgammamilano.it</a></span>
+													</div>
+												</div>
 
-										<a href="https://maps.app.goo.gl/1FcBJUUinBp4EFrd8" target="_blank"><i class='fas fa-map-marker-alt' style='font-size:22px'></i></a>
-										Via Tucidide 14, 20134, Milan, Italy.</br>
-										<a href="callto:+39 02-89698400">&#128222;</a> +39 02 89698400</br>
-										</li><br/>
+												<!-- Hotel 3 -->
+												<div class="hotel-card">
+													<a href="https://hotellombardia.com" target="_blank" class="hotel-name">Hotel Lombardia</a>
+													<div class="hotel-detail">
+														<i class="fa fa-map-marker"></i> 
+														<span><a href="https://maps.app.goo.gl/UBFpTEoFWePKxJVH8" target="_blank">Viale Lombardia 74, 20131, Milan, Italy</a></span>
+													</div>
+													<div class="hotel-detail">
+														<i class="fa fa-phone"></i> 
+														<span><a href="tel:+39022824849">+39 02 2824849</a></span>
+													</div>
+													<div class="hotel-detail">
+														<i class="fa fa-envelope"></i> 
+														<span><a href="mailto:info@hotellombardia.com">info@hotellombardia.com</a></span>
+													</div>
+												</div>
 
-										
-										<li> <a href="https://21houseofstories.com/milano-citta-studi/"  target="_blank"> <b>21houseofstories Città Studi</b></a><br/>
-										<a href="https://maps.app.goo.gl/f2HUTWXaerFQN6s46" target="_blank"><i class='fas fa-map-marker-alt' style='font-size:22px'></i></a>
-										Via Enrico Nöe 24, 20133, Milan, Italy</br>
-										<a href="callto: +39 0256568715">&#128222;</a> +39 02 56568715</br>
-										<a href="mailto:ciaocittastudi@21houseofstories.com"><i class="fa fa-envelope" style="font-size:20px"></i></a>	ciaocittastudi@21houseofstories.com
-										</li><br/>
+												<!-- Hotel 4 -->
+												<div class="hotel-card">
+													<a href="https://www.marriott.com/it/hotels/milcy-courtyard-milano-linate/overview/" target="_blank" class="hotel-name">Courtyard by Marriott Milano Linate</a>
+													<div class="hotel-detail">
+														<i class="fa fa-map-marker"></i> 
+														<span><a href="https://maps.app.goo.gl/1FcBJUUinBp4EFrd8" target="_blank">Via Tucidide 14, 20134, Milan, Italy</a></span>
+													</div>
+													<div class="hotel-detail">
+														<i class="fa fa-phone"></i> 
+														<span><a href="tel:+390289698400">+39 02 89698400</a></span>
+													</div>
+												</div>
 
-										<!-- 
-										<li> <a href="https://www.carlosv.com/en"  target="_blank"> <b>Hotel Carlos V</b></a><br/>
-										<a href="https://maps.app.goo.gl/2uyLpeuutAnAjVoN8" target="_blank"><i class='fas fa-map-marker-alt' style='font-size:22px'></i></a>
-										Pl. del Horno de la Magdalena, 4, 45001, Toledo, España</br>
-										<a href="callto:+34 925 22 21 00">&#128222;</a> +34 925 22 21 00</br>
-										<a href="mailto:info@carlosv.com"><i class="fa fa-envelope" style="font-size:20px"></i></a>	info@carlosv.com
-										</li><br/>
-	
-										<li> <a href="https://www.sercotelhoteles.com/en/hotel-alfonso-vi"  target="_blank"> <b>Hotel Sercotel Alfonso VI</b></a><br/>
-										<a href="https://maps.app.goo.gl/VJeVkDko6rMLZMyy9" target="_blank"><i class='fas fa-map-marker-alt' style='font-size:22px'></i></a>
-										Cta. de los Capuchinos, 2, 45001, Toledo, España</br>
-										<a href="callto:+34 925 22 26 00">&#128222;</a> +34  925 22 26 00</br>
-										<a href="mailto:reservas@sercotel.com"><i class="fa fa-envelope" style="font-size:20px"></i></a>	reservas@sercotel.com
-										</li><br/>
-		
-										<li> <a href="https://www.hotelrealdetoledo.es/en/"  target="_blank"> <b>Hotel Real de Toledo</b></a><br/>
-										<a href="https://maps.app.goo.gl/DHrBApBbVcY5rpuU6" target="_blank"><i class='fas fa-map-marker-alt' style='font-size:22px'></i></a>
-										C. Real del Arrabal, 2-4, 45003, Toledo, España</br>
-										<a href="callto:+34 925 22 93 00">&#128222;</a> +34 925 22 93 00</br>
-										<a href="mailto:info@hotelrealdetoledo.es"><i class="fa fa-envelope" style="font-size:20px"></i></a>	 info@hotelrealdetoledo.es
-										</li><br/>
+												<!-- Hotel 5 -->
+												<div class="hotel-card">
+													<a href="https://21houseofstories.com/milano-citta-studi/" target="_blank" class="hotel-name">21houseofstories Città Studi</a>
+													<div class="hotel-detail">
+														<i class="fa fa-map-marker"></i> 
+														<span><a href="https://maps.app.goo.gl/f2HUTWXaerFQN6s46" target="_blank">Via Enrico Nöe 24, 20133, Milan, Italy</a></span>
+													</div>
+													<div class="hotel-detail">
+														<i class="fa fa-phone"></i> 
+														<span><a href="tel:+390256568715">+39 02 56568715</a></span>
+													</div>
+													<div class="hotel-detail">
+														<i class="fa fa-envelope"></i> 
+														<span><a href="mailto:ciaocittastudi@21houseofstories.com">ciaocittastudi@21houseofstories.com</a></span>
+													</div>
+												</div>
 
-										</ul>
-										 -->
+											</div>
 					
 										</article>
 								</div>
@@ -165,7 +282,6 @@
 
 			
 			<!-- Footer Wrapper -->
-
 <div id="footer-wrapper-logo">
   <footer id="footer" class="container">
     <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; color:white;">
@@ -178,35 +294,28 @@
           <dl class="contact">
             <dt>LOC:</dt>
             <dd><a href="mailto:galaxyclustersconf@gmail.com">galaxyclustersconf@gmail.com</a></dd>
-            <!--
-            <dt>LOC:</dt>
-            <dd><a href="galaxyclustersconf@gmail.com">galaxyclustersconf@gmail.com/a></dd>
-            -->
           </dl>
         </div>
 
         <!-- Website credits -->
         <div style="margin-top:15px;">
-          <h2 style="font-size:18px; margin:0 0 2px 0;">Website credits:</h2> <!-- tighter spacing -->
+          <h2 style="font-size:18px; margin:0 0 2px 0;">Website credits:</h2>
           <p style="font-size:14px; margin:0;">M. Annunziatella</p>
         </div>
 
         <!-- Website last update -->
         <div style="margin-top:12px;">
-          <h2 style="font-size:18px; margin:0 0 2px 0;">Website last update:</h2> <!-- tighter spacing -->
+          <h2 style="font-size:18px; margin:0 0 2px 0;">Website last update:</h2>
           <p style="font-size:14px; margin:0;">
             <script>document.write(new Date(document.lastModified));</script>
           </p>
         </div>
       </div>
 
-      
-
     </div>
   </footer>
 </div>
 			<!-- Scripts -->
-
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.dropotron.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -214,6 +323,5 @@
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 
-	
 	</body>
 </html>
