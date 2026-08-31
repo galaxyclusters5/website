@@ -72,14 +72,33 @@
 				font-weight: 800;
 			}
 
-			/* Centered Hotel Card Grid for Mobile */
-			.hotel-grid {
-				display: grid;
-				grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+			/* Symmetric Hotel Rows */
+			.hotel-row {
+				display: flex;
+				flex-wrap: wrap;
 				gap: 20px;
-				margin-top: 20px;
-				margin-bottom: 40px;
 				justify-content: center;
+				margin-bottom: 20px;
+			}
+
+			.hotel-row-3 .hotel-card {
+				flex: 1 1 calc(33.333% - 20px);
+				min-width: 280px;
+				max-width: 380px;
+			}
+
+			.hotel-row-2 .hotel-card {
+				flex: 0 1 calc(40% - 20px);
+				min-width: 280px;
+				max-width: 420px;
+			}
+
+			@media screen and (max-width: 980px) {
+				.hotel-row-3 .hotel-card,
+				.hotel-row-2 .hotel-card {
+					flex: 1 1 100%;
+					max-width: 100%;
+				}
 			}
 
 			.hotel-card {
@@ -229,87 +248,93 @@
 												The following hotels offer special rates for attendees of conferences held at the CNR Congress Center.
 											</p>	
 											
-											<!-- Styled Hotel Grid -->
-											<div class="hotel-grid">
+											<!-- Symmetric Hotel Section -->
+											<div style="margin-top: 20px; margin-bottom: 40px;">
 												
-												<!-- Hotel 1 -->
-												<div class="hotel-card">
-													<a href="https://www.hotel-sanfrancisco.it" target="_blank" class="hotel-name">Hotel San Francisco</a>
-													<div class="hotel-detail">
-														<i class="fa fa-map-marker"></i> 
-														<span><a href="https://maps.app.goo.gl/yPex3y2kRiRAkWJM9" target="_blank">Viale Lombardia 55, 20131, Milan, Italy</a></span>
+												<!-- Top Row: 3 Hotels -->
+												<div class="hotel-row hotel-row-3">
+													<!-- Hotel 1 -->
+													<div class="hotel-card">
+														<a href="https://www.hotel-sanfrancisco.it" target="_blank" class="hotel-name">Hotel San Francisco</a>
+														<div class="hotel-detail">
+															<i class="fa fa-map-marker"></i> 
+															<span><a href="https://maps.app.goo.gl/yPex3y2kRiRAkWJM9" target="_blank">Viale Lombardia 55, 20131, Milan, Italy</a></span>
+														</div>
+														<div class="hotel-detail">
+															<i class="fa fa-phone"></i> 
+															<span><a href="tel:+39022360302">+39 02 2360302</a></span>
+														</div>
+														<div class="hotel-detail">
+															<i class="fa fa-envelope"></i> 
+															<span><a href="mailto:INFO@HOTEL-SANFRANCISCO.IT">INFO@HOTEL-SANFRANCISCO.IT</a></span>
+														</div>
 													</div>
-													<div class="hotel-detail">
-														<i class="fa fa-phone"></i> 
-														<span><a href="tel:+39022360302">+39 02 2360302</a></span>
+
+													<!-- Hotel 2 -->
+													<div class="hotel-card">
+														<a href="https://hotelgammamilano.it/" target="_blank" class="hotel-name">Hotel Gamma</a>
+														<div class="hotel-detail">
+															<i class="fa fa-map-marker"></i> 
+															<span><a href="https://maps.app.goo.gl/rhsLWZPa48bR4gQf6" target="_blank">Via Peroni 85, 20133, Milan, Italy</a></span>
+														</div>
+														<div class="hotel-detail">
+															<i class="fa fa-phone"></i> 
+															<span><a href="tel:+390226413152">+39 02 26413152</a></span>
+														</div>
+														<div class="hotel-detail">
+															<i class="fa fa-envelope"></i> 
+															<span><a href="mailto:info@hotelgammamilano.it">info@hotelgammamilano.it</a></span>
+														</div>
 													</div>
-													<div class="hotel-detail">
-														<i class="fa fa-envelope"></i> 
-														<span><a href="mailto:INFO@HOTEL-SANFRANCISCO.IT">INFO@HOTEL-SANFRANCISCO.IT</a></span>
+
+													<!-- Hotel 3 -->
+													<div class="hotel-card">
+														<a href="https://hotellombardia.com" target="_blank" class="hotel-name">Hotel Lombardia</a>
+														<div class="hotel-detail">
+															<i class="fa fa-map-marker"></i> 
+															<span><a href="https://maps.app.goo.gl/UBFpTEoFWePKxJVH8" target="_blank">Viale Lombardia 74, 20131, Milan, Italy</a></span>
+														</div>
+														<div class="hotel-detail">
+															<i class="fa fa-phone"></i> 
+															<span><a href="tel:+39022824849">+39 02 2824849</a></span>
+														</div>
+														<div class="hotel-detail">
+															<i class="fa fa-envelope"></i> 
+															<span><a href="mailto:info@hotellombardia.com">info@hotellombardia.com</a></span>
+														</div>
 													</div>
 												</div>
 
-												<!-- Hotel 2 -->
-												<div class="hotel-card">
-													<a href="https://hotelgammamilano.it/" target="_blank" class="hotel-name">Hotel Gamma</a>
-													<div class="hotel-detail">
-														<i class="fa fa-map-marker"></i> 
-														<span><a href="https://maps.app.goo.gl/rhsLWZPa48bR4gQf6" target="_blank">Via Peroni 85, 20133, Milan, Italy</a></span>
+												<!-- Bottom Row: 2 Hotels -->
+												<div class="hotel-row hotel-row-2">
+													<!-- Hotel 4 -->
+													<div class="hotel-card">
+														<a href="https://www.marriott.com/it/hotels/milcy-courtyard-milano-linate/overview/" target="_blank" class="hotel-name">Courtyard by Marriott Milano Linate</a>
+														<div class="hotel-detail">
+															<i class="fa fa-map-marker"></i> 
+															<span><a href="https://maps.app.goo.gl/1FcBJUUinBp4EFrd8" target="_blank">Via Tucidide 14, 20134, Milan, Italy</a></span>
+														</div>
+														<div class="hotel-detail">
+															<i class="fa fa-phone"></i> 
+															<span><a href="tel:+390289698400">+39 02 89698400</a></span>
+														</div>
 													</div>
-													<div class="hotel-detail">
-														<i class="fa fa-phone"></i> 
-														<span><a href="tel:+390226413152">+39 02 26413152</a></span>
-													</div>
-													<div class="hotel-detail">
-														<i class="fa fa-envelope"></i> 
-														<span><a href="mailto:info@hotelgammamilano.it">info@hotelgammamilano.it</a></span>
-													</div>
-												</div>
 
-												<!-- Hotel 3 -->
-												<div class="hotel-card">
-													<a href="https://hotellombardia.com" target="_blank" class="hotel-name">Hotel Lombardia</a>
-													<div class="hotel-detail">
-														<i class="fa fa-map-marker"></i> 
-														<span><a href="https://maps.app.goo.gl/UBFpTEoFWePKxJVH8" target="_blank">Viale Lombardia 74, 20131, Milan, Italy</a></span>
-													</div>
-													<div class="hotel-detail">
-														<i class="fa fa-phone"></i> 
-														<span><a href="tel:+39022824849">+39 02 2824849</a></span>
-													</div>
-													<div class="hotel-detail">
-														<i class="fa fa-envelope"></i> 
-														<span><a href="mailto:info@hotellombardia.com">info@hotellombardia.com</a></span>
-													</div>
-												</div>
-
-												<!-- Hotel 4 -->
-												<div class="hotel-card">
-													<a href="https://www.marriott.com/it/hotels/milcy-courtyard-milano-linate/overview/" target="_blank" class="hotel-name">Courtyard by Marriott Milano Linate</a>
-													<div class="hotel-detail">
-														<i class="fa fa-map-marker"></i> 
-														<span><a href="https://maps.app.goo.gl/1FcBJUUinBp4EFrd8" target="_blank">Via Tucidide 14, 20134, Milan, Italy</a></span>
-													</div>
-													<div class="hotel-detail">
-														<i class="fa fa-phone"></i> 
-														<span><a href="tel:+390289698400">+39 02 89698400</a></span>
-													</div>
-												</div>
-
-												<!-- Hotel 5 -->
-												<div class="hotel-card">
-													<a href="https://21houseofstories.com/milano-citta-studi/" target="_blank" class="hotel-name">21houseofstories Città Studi</a>
-													<div class="hotel-detail">
-														<i class="fa fa-map-marker"></i> 
-														<span><a href="https://maps.app.goo.gl/f2HUTWXaerFQN6s46" target="_blank">Via Enrico Nöe 24, 20133, Milan, Italy</a></span>
-													</div>
-													<div class="hotel-detail">
-														<i class="fa fa-phone"></i> 
-														<span><a href="tel:+390256568715">+39 02 56568715</a></span>
-													</div>
-													<div class="hotel-detail">
-														<i class="fa fa-envelope"></i> 
-														<span><a href="mailto:ciaocittastudi@21houseofstories.com">ciaocittastudi@21houseofstories.com</a></span>
+													<!-- Hotel 5 -->
+													<div class="hotel-card">
+														<a href="https://21houseofstories.com/milano-citta-studi/" target="_blank" class="hotel-name">21houseofstories Città Studi</a>
+														<div class="hotel-detail">
+															<i class="fa fa-map-marker"></i> 
+															<span><a href="https://maps.app.goo.gl/f2HUTWXaerFQN6s46" target="_blank">Via Enrico Nöe 24, 20133, Milan, Italy</a></span>
+														</div>
+														<div class="hotel-detail">
+															<i class="fa fa-phone"></i> 
+															<span><a href="tel:+390256568715">+39 02 56568715</a></span>
+														</div>
+														<div class="hotel-detail">
+															<i class="fa fa-envelope"></i> 
+															<span><a href="mailto:ciaocittastudi@21houseofstories.com">ciaocittastudi@21houseofstories.com</a></span>
+														</div>
 													</div>
 												</div>
 
