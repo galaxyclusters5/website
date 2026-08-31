@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 	
 	<head>
@@ -60,6 +59,60 @@
 				color: #888888;
 				margin-right: 4px;
 				font-size: 0.9em;
+			}
+
+			/* Date Cards Layout */
+			.date-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+				gap: 20px;
+				margin-top: 30px;
+				margin-bottom: 20px;
+			}
+
+			.date-card {
+				background: #fdfdfd;
+				padding: 30px 20px;
+				border-radius: 8px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+				text-align: center;
+				border-top: 4px solid #fc8403; /* Orange accent */
+				transition: all 0.3s ease;
+			}
+
+			.date-card:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+			}
+
+			.date-card.closed {
+				border-top: 4px solid #999999;
+				background: #f9f9f9;
+			}
+
+			.date-icon {
+				font-size: 2.5em;
+				color: #fc8403;
+				margin-bottom: 15px;
+			}
+
+			.date-card.closed .date-icon {
+				color: #aaaaaa;
+			}
+
+			.date-title {
+				font-size: 1.1em;
+				font-weight: 800;
+				color: #333333;
+				margin-bottom: 10px;
+				text-transform: uppercase;
+				letter-spacing: 0.05em;
+			}
+
+			.date-value {
+				font-size: 1.05em;
+				color: #555555;
+				font-weight: 600;
 			}
 		</style>
 	</head>
@@ -227,38 +280,46 @@
 					<div class="wrapper style3">
 						<div class="inner">
 							<div class="container">
-								<div class="row">
-									<div class="col-12 col-12-medium">
-
-										<!-- Article list -->
-											<section class="box article-list">
-												<h2 class="icon fa-file-alt">Important dates</h2>
-												<article class="box excerpt">
-														<div>
-															<header>
-																<!-- <h3> October 01 2024 &#8212; <a href="abstract-and-registration.html">Abstract submission opens</a></h3>-->
-																<h3> <a href="abstract-and-registration.html"> Abstract submission</a>: now closed </h3>
-															</header>
-															<header>
-																<!-- <h3>December 06 2024 &#8212; A<a>bstract deadline</a></h3> -->
-																<h3>Abstract Deadline: April, 24th 2026</h3>
-															</header>
-															<header>
-																<h3>Registration closes: July, 31st 2026</h3>
-															</header>
-															<header>
-																<!-- <h3>March 14 2025  &#8212; <a>Late registration closes</a></h3> -->
-																<h3>Conference: 08-11 September 2026</h3>
-															</header>
-														</div>
-													</article>
-											</section>
+								
+								<!-- Modern Date Cards -->
+								<section class="box" style="padding-top: 0;">
+									<header class="major" style="text-align: center; border-bottom: none; margin-bottom: 0;">
+										<h2 class="icon fa-calendar-alt" style="margin-bottom: 0;">Important Dates</h2>
+									</header>
+									
+									<div class="date-grid">
+										<!-- Abstract Submission -->
+										<div class="date-card closed">
+											<i class="fa fa-lock date-icon"></i>
+											<div class="date-title">Abstract Submission</div>
+											<div class="date-value">
+												<a href="abstract-and-registration.html" style="text-decoration: none; color: inherit;">Now Closed</a>
+											</div>
+										</div>
+										
+										<!-- Abstract Deadline -->
+										<div class="date-card closed">
+											<i class="fa fa-file-alt date-icon"></i>
+											<div class="date-title">Abstract Deadline</div>
+											<div class="date-value">April 24th, 2026</div>
+										</div>
+										
+										<!-- Registration Deadline -->
+										<div class="date-card closed">
+											<i class="fa fa-user-times date-icon"></i>
+											<div class="date-title">Registration Closes</div>
+											<div class="date-value">July 31st, 2026</div>
+										</div>
+										
+										<!-- Conference Date -->
+										<div class="date-card">
+											<i class="fa fa-users date-icon"></i>
+											<div class="date-title">Conference</div>
+											<div class="date-value">08-11 September 2026</div>
+										</div>
 									</div>
-									<div class="col-4 col-12-medium">
+								</section>
 
-
-									</div>
-								</div>
 							</div>
 						</div>
 					</div>
@@ -278,29 +339,23 @@
           <dl class="contact">
             <dt>LOC:</dt>
             <dd><a href="mailto:galaxyclustersconf@gmail.com">galaxyclustersconf@gmail.com</a></dd>
-            <!--
-            <dt>LOC:</dt>
-            <dd><a href="galaxyclustersconf@gmail.com">galaxyclustersconf@gmail.com/a></dd>
-            -->
           </dl>
         </div>
 
         <!-- Website credits -->
         <div style="margin-top:15px;">
-          <h2 style="font-size:18px; margin:0 0 2px 0;">Website credits:</h2> <!-- tighter spacing -->
+          <h2 style="font-size:18px; margin:0 0 2px 0;">Website credits:</h2>
           <p style="font-size:14px; margin:0;">M. Annunziatella</p>
         </div>
 
         <!-- Website last update -->
         <div style="margin-top:12px;">
-          <h2 style="font-size:18px; margin:0 0 2px 0;">Website last update:</h2> <!-- tighter spacing -->
+          <h2 style="font-size:18px; margin:0 0 2px 0;">Website last update:</h2>
           <p style="font-size:14px; margin:0;">
             <script>document.write(new Date(document.lastModified));</script>
           </p>
         </div>
       </div>
-
-      
 
     </div>
   </footer>
@@ -315,19 +370,3 @@
 
 	</body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
