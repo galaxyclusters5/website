@@ -1,3 +1,4 @@
+<!DOCTYPE HTML>
 
 <html>
 	<head>
@@ -9,6 +10,25 @@
 			.lowercase {
             	text-transform: lowercase;
         	}
+			
+			/* Responsive Map Container */
+			.map-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+				margin-bottom: 20px;
+			}
+
+			.map-container iframe {
+				width: 100%;
+				max-width: 600px;
+				height: 450px;
+				border-radius: 8px;
+				box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+			}
+
 			.image-grid {
 				display: flex;
 				flex-wrap: wrap;
@@ -25,38 +45,41 @@
 			}
 
 			.custom-map-btn {
-	display: inline-flex;
-	align-items: center;
-	justify-content: center;
-	background: linear-gradient(135deg, #434343 0%, #1c1c1c 100%);
-	color: #ffffff !important;
-	padding: 14px 32px;
-	border-radius: 50px;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 700;
-	font-size: 13px;
-	letter-spacing: 1.5px;
-	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-	transition: all 0.3s ease 0s;
-	border: none;
-	}
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				background: linear-gradient(135deg, #434343 0%, #1c1c1c 100%);
+				color: #ffffff !important;
+				padding: 14px 32px;
+				border-radius: 50px;
+				text-decoration: none;
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: 13px;
+				letter-spacing: 1.5px;
+				box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+				transition: all 0.3s ease 0s;
+				border: none;
+			}
 
-	.custom-map-btn:hover {
-	background: linear-gradient(135deg, #5c5c5c 0%, #2b2b2b 100%);
-	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
-	transform: translateY(-3px);
-	}
+			.custom-map-btn:hover {
+				background: linear-gradient(135deg, #5c5c5c 0%, #2b2b2b 100%);
+				box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+				transform: translateY(-3px);
+			}
 
-	.custom-map-btn i {
-	margin-right: 10px;
-	font-size: 16px;
-	}
+			.custom-map-btn i {
+				margin-right: 10px;
+				font-size: 16px;
+			}
 			
 			@media screen and (max-width: 768px) {
 				.image-grid img {
 					width: 100%;
 					height: auto;
+				}
+				.map-container iframe {
+					height: 300px;
 				}
 			}
 		</style>
@@ -126,13 +149,13 @@
 												
 												<br/>
 												<div class="map-container">
-												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8420.34767310049!2d9.224323442858623!3d45.48995434888887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c7eb86bc7de1%3A0xbb40f9b63b0e3860!2sCapoverde%20Ristorante%20%7C%20Gustoso%20e%20Solidale!5e0!3m2!1sit!2sit!4v1788182049943!5m2!1sit!2sit" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-												<br/><br/>
-												<p>
-												<a href="https://maps.app.goo.gl/MzksZvkaMUcLYzZh6" target="_blank" class="custom-map-btn">
-												<i class="fa fa-map-marker"></i> View Location on Google Maps
-												</a>
-                                                </p>
+													<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8420.34767310049!2d9.224323442858623!3d45.48995434888887!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4786c7eb86bc7de1%3A0xbb40f9b63b0e3860!2sCapoverde%20Ristorante%20%7C%20Gustoso%20e%20Solidale!5e0!3m2!1sit!2sit!4v1788182049943!5m2!1sit!2sit" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+													<br/>
+													<p>
+														<a href="https://maps.app.goo.gl/MzksZvkaMUcLYzZh6" target="_blank" class="custom-map-btn">
+															<i class="fa fa-map-marker"></i> View Location on Google Maps
+														</a>
+													</p>
 												</div>
 
 												<br/>
