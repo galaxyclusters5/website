@@ -1970,17 +1970,15 @@ input, select, textarea {
 	}
 
 	#footer-wrapper-logo{
-		background-image:  url("images/footer.png");
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: bottom center;
-		height: 100%;
-		width: 100%;
-		object-fit: contain;
-        	padding: 3em 0;
-		height: 500px;
-	}
-
+	background-image:  url("images/footer.png");
+	background-color: #000000; /* Fallback if the image doesn't load */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	width: 100%;
+	padding: 3em 0;
+	height: auto; 
+}
 
 	.wrapper {
 		padding: 7em 0 7em 0;
