@@ -1,5 +1,4 @@
 <!DOCTYPE HTML>
-
 <html>
 <head>
     <title>CLUSTER 5 | Abstract & Registration</title>
@@ -8,6 +7,54 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
         .lowercase { text-transform: lowercase; }
+
+        /* Status Cards Layout */
+        .status-container {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+
+        .status-card {
+            background: #fdfdfd;
+            padding: 35px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid #d32f2f; /* Red accent indicating closed */
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .status-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+        }
+
+        .status-card h4 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #333333;
+            font-weight: 700;
+        }
+
+        .status-card p {
+            font-size: 1.1em;
+            color: #666666;
+            margin: 0;
+        }
+
+        .status-icon {
+            font-size: 2.5em;
+            color: #d32f2f;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
     </style>
 </head>
 
@@ -22,13 +69,13 @@
         <header id="header">
             <div class="inner">
 
-      									<!-- Logo -->
-										<div class="logo">
-										<a href="index.html" id="logo">
-										<img src="images/logo_nowriting.png" height="98%" width="100px">
-										 </a>
-										</div>
-                <!-- Nav (same as index.html) -->
+                <!-- Logo -->
+                <div class="logo">
+                <a href="index.html" id="logo">
+                <img src="images/logo_nowriting.png" height="98%" width="100px">
+                 </a>
+                </div>
+                <!-- Nav -->
                 <nav id="nav">
                     <ul>
                         <li><a href="index.html">Home</a></li>
@@ -51,7 +98,7 @@
             </div>
         </header>
 
-        <!-- Banner (same style as index.html) -->
+        <!-- Banner -->
         <div id="banner">
                 <strong><h2> Abstract & registration <br/> <br/> <br/> </strong></h2> 
         </div>
@@ -67,25 +114,28 @@
                 <div id="content">
 
                     <article>
-                        <header class="major">
-                            <h2>ABSTRACT SUBMISSION</h2>
-                            <p>Abstract submission is now closed</p>
-							<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelTBFfcJHj8VkjJrzOfd2XA3T3XFCV362ajYbQFKyybgG_-g/viewform?embedded=true" width="640" height="1733" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe> -->
+                        <header class="major" style="text-align: center;">
+                            <h3>Submission & Registration Status</h3>
                         </header>
-                        <p></p>
-                    </article>
-
-                    <article>
-                        <header class="major">
-                            <h2>REGISTRATION</h2>
-                            <p>
-                                Registration is now closed </p>
-							<!-- 	
-							 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5OLdoXEc1_bhO3DxmIdsLRymUGzz8e3Pz-hfifrTVN5BdJw/viewform?embedded=true" width="640" height="1733" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe> 
-							 -->
+                        
+                        <div class="status-container">
+                            <!-- Abstract Status Card -->
+                            <div class="status-card">
+                                <i class="fa fa-lock status-icon"></i>
+                                <h4>Abstract Submission</h4>
+                                <p>Abstract submission is now closed.</p>
+                                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSelTBFfcJHj8VkjJrzOfd2XA3T3XFCV362ajYbQFKyybgG_-g/viewform?embedded=true" width="640" height="1733" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe> -->
+                            </div>
                             
-                        </header>
-                        <p></p>
+                            <!-- Registration Status Card -->
+                            <div class="status-card">
+                                <i class="fa fa-lock status-icon"></i>
+                                <h4>Registration</h4>
+                                <p>Registration is now closed.</p>
+                                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf5OLdoXEc1_bhO3DxmIdsLRymUGzz8e3Pz-hfifrTVN5BdJw/viewform?embedded=true" width="640" height="1733" frameborder="0" marginheight="0" marginwidth="0">Caricamento…</iframe> -->
+                            </div>
+                        </div>
+
                     </article>
 
                 </div>
@@ -107,42 +157,36 @@
           <dl class="contact">
             <dt>LOC:</dt>
             <dd><a href="mailto:galaxyclustersconf@gmail.com">galaxyclustersconf@gmail.com</a></dd>
-            <!--
-            <dt>LOC:</dt>
-            <dd><a href="galaxyclustersconf@gmail.com">galaxyclustersconf@gmail.com/a></dd>
-            -->
           </dl>
         </div>
 
         <!-- Website credits -->
         <div style="margin-top:15px;">
-          <h2 style="font-size:18px; margin:0 0 2px 0;">Website credits:</h2> <!-- tighter spacing -->
+          <h2 style="font-size:18px; margin:0 0 2px 0;">Website credits:</h2>
           <p style="font-size:14px; margin:0;">M. Annunziatella</p>
         </div>
 
         <!-- Website last update -->
         <div style="margin-top:12px;">
-          <h2 style="font-size:18px; margin:0 0 2px 0;">Website last update:</h2> <!-- tighter spacing -->
+          <h2 style="font-size:18px; margin:0 0 2px 0;">Website last update:</h2>
           <p style="font-size:14px; margin:0;">
             <script>document.write(new Date(document.lastModified));</script>
           </p>
         </div>
       </div>
 
-      
-
     </div>
   </footer>
 </div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
-	</body>
+</body>
 </html>
 
 
