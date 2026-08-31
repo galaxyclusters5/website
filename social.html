@@ -1,9 +1,4 @@
-<!DOCTYPE HTML>
-<!--
-	ZeroFour by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
 		<title>CLUSTER 5 | Social Events</title>
@@ -14,6 +9,26 @@
 			.lowercase {
             	text-transform: lowercase;
         	}
+			.image-grid {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 15px;
+				margin-top: 20px;
+				margin-bottom: 10px;
+			}
+			.image-grid img {
+				width: calc(50% - 7.5px);
+				height: 300px; /* Fixed height for uniformity */
+				object-fit: cover;
+				border-radius: 4px;
+				box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			}
+			@media screen and (max-width: 768px) {
+				.image-grid img {
+					width: 100%;
+					height: auto;
+				}
+			}
 		</style>
 	</head>
 	<body class="no-sidebar is-preload">
@@ -86,6 +101,16 @@
 														<a href="https://maps.app.goo.gl/MzksZvkaMUcLYzZh6" target="_blank" class="button">View Location on Google Maps</a>
 													</p>
 												</div>
+
+												<br/>
+												<h4>Photos from Google Reviews</h4>
+												<div class="image-grid">
+													<img src="images/unnamed.jpg" alt="Restaurant interior 1">
+													<img src="images/unnamed-2.jpg" alt="Restaurant interior 2">
+													<img src="images/unnamed-3.jpg" alt="Restaurant bar area">
+													<img src="images/unnamed-5.jpg" alt="Restaurant outdoor garden">
+												</div>
+												<p><em>(All images are taken from Google Reviews)</em></p>
 											</header>
 
 										</article>
