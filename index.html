@@ -1,9 +1,5 @@
 <!DOCTYPE HTML>
-<!--
-	ZeroFour by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	
 	<head>
@@ -15,6 +11,56 @@
 			.lowercase {
             	text-transform: lowercase;
         	}
+
+			/* Compact Committee Grid Layout */
+			.committee-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+				gap: 10px; 
+				margin-top: 20px;
+				margin-bottom: 40px;
+			}
+
+			/* Compact Individual Card Styling */
+			.committee-card {
+				background: #fdfdfd;
+				padding: 10px 14px; 
+				border-radius: 4px; 
+				box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+				transition: all 0.2s ease;
+				border-left: 4px solid #4285F4; 
+				text-align: left;
+			}
+
+			.committee-card.loc-card {
+				border-left: 4px solid #0d47a1;
+			}
+
+			.committee-card:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				background: #ffffff;
+			}
+
+			.member-name {
+				display: block;
+				font-weight: 700;
+				font-size: 0.95em; 
+				color: #333333;
+				margin-bottom: 2px; 
+			}
+
+			.member-affiliation {
+				display: block;
+				font-size: 0.8em; 
+				color: #666666;
+			}
+
+			.member-affiliation i {
+				color: #888888;
+				margin-right: 4px;
+				font-size: 0.9em;
+			}
 		</style>
 	</head>
 	<body class="homepage is-preload">
@@ -116,61 +162,69 @@
 
 						</div>
 					</div>
-							<div class="wrapper style2">
+					
+					<div class="wrapper style2">
 						<div class="inner">
 							<!-- Feature 2 -->
 								<section class="container box feature2">
-                                    	
-										<div class="col-4 col-12-large" align="left">
+									<div class="row">
+										<!-- SOC Section -->
+										<div class="col-12">
 											<section>
-												<header class="major">
+												<header class="major" style="text-align: center;">
 													<h3>SCIENTIFIC ORGANIZING COMMITTEE</h3>
-													<br/>
-													<p style="font-size:18px;"  >
-													Veronica Biffi <span style="font-size: 14px;">(INAF - OA Trieste)</span><br/>
-													Andrea Botteon <span style="font-size: 14px;">(INAF - IRA Bologna)</span><br/>
-													Giovanni Covone <span style="font-size: 14px;">(Università di Napoli Federico II)</span><br/>
-													Fabio Gastaldello <span style="font-size: 14px;">(INAF - IASF Milano)</span><br/>
-													Carlo Giocoli <span style="font-size: 14px;">(INAF - OAS Bologna)</span><br/>
-													Sabrina De Grandi <span style="font-size: 14px;">(INAF - OA Brera)</span><br/>
-													Marco De Petris <span style="font-size: 14px;">(Sapienza Università di Roma)</span><br/>
-													Francesco Massaro <span style="font-size: 14px;">(Università di Torino)</span><br/>
-													Pasquale Mazzotta <span style="font-size: 14px;">(Università di Roma Tor Vergata)</span><br/>
-													Massimo Meneghetti <span style="font-size: 14px;">(INAF - OAS Bologna)</span><br/>
-													Amata Mercurio <span style="font-size: 14px;">(Università di Salerno)</span><br/>
-													Alex Saro <span style="font-size: 14px;">(Università di Trieste)</span><br/>
-													Veronica Strazzullo <span style="font-size: 14px;">(INAF - OA Trieste)</span><br/>
-													Valentina Vacca <span style="font-size: 14px;">(INAF - OA Cagliari)</span><br/>
-													Benedetta Vulcani <span style="font-size: 14px;">(INAF - OA Padova)</span><br/>
-															</p>
 												</header>
+												
+												<div class="committee-grid">
+													<div class="committee-card"><span class="member-name">Veronica Biffi</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - OA Trieste</span></div>
+													<div class="committee-card"><span class="member-name">Andrea Botteon</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - IRA Bologna</span></div>
+													<div class="committee-card"><span class="member-name">Giovanni Covone</span><span class="member-affiliation"><i class="fa fa-institution"></i> Università di Napoli Federico II</span></div>
+													<div class="committee-card"><span class="member-name">Fabio Gastaldello</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - IASF Milano</span></div>
+													<div class="committee-card"><span class="member-name">Carlo Giocoli</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - OAS Bologna</span></div>
+													<div class="committee-card"><span class="member-name">Sabrina De Grandi</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - OA Brera</span></div>
+													<div class="committee-card"><span class="member-name">Marco De Petris</span><span class="member-affiliation"><i class="fa fa-institution"></i> Sapienza Università di Roma</span></div>
+													<div class="committee-card"><span class="member-name">Francesco Massaro</span><span class="member-affiliation"><i class="fa fa-institution"></i> Università di Torino</span></div>
+													<div class="committee-card"><span class="member-name">Pasquale Mazzotta</span><span class="member-affiliation"><i class="fa fa-institution"></i> Università di Roma Tor Vergata</span></div>
+													<div class="committee-card"><span class="member-name">Massimo Meneghetti</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - OAS Bologna</span></div>
+													<div class="committee-card"><span class="member-name">Amata Mercurio</span><span class="member-affiliation"><i class="fa fa-institution"></i> Università di Salerno</span></div>
+													<div class="committee-card"><span class="member-name">Alex Saro</span><span class="member-affiliation"><i class="fa fa-institution"></i> Università di Trieste</span></div>
+													<div class="committee-card"><span class="member-name">Veronica Strazzullo</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - OA Trieste</span></div>
+													<div class="committee-card"><span class="member-name">Valentina Vacca</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - OA Cagliari</span></div>
+													<div class="committee-card"><span class="member-name">Benedetta Vulcani</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - OA Padova</span></div>
+												</div>
 											</section>
 										</div>
-										<div class="col-4 col-12-large" align="left">
-											<section>
-												<header class="major">
-													<h3>LOCAL ORGANIZING COMMITTEE <br/></h3>
-													<br/>
-													<br/>
-													<p style="font-size:18px;" >
-													Marianna Annunziatella (INAF - IASF Milano)<br/>
-													Iacopo Bartalucci (INAF - IASF Milano)<br/>
-                                                    Sabrina De Grandi (INAF - OA Brera) <br/>
-													Fabio Gastaldello (INAF - IASF Milano)<br/>
-													Simona Ghizzardi (INAF - IASF Milano) <br/>
-													Claudio Grillo (Università degli Studi di Milano) <br/>
-													Lorenzo Lovisari (INAF - IASF Milano)<br/>
-													Mariachiara Rossetti (INAF - IASF Milano) <br/>
+										
+										<!-- Divider -->
+										<div class="col-12">
+											<hr style="border: 0; height: 1px; background: #e0e0e0; margin: 10px 0 40px 0;">
+										</div>
 
-													</p>
+										<!-- LOC Section -->
+										<div class="col-12">
+											<section>
+												<header class="major" style="text-align: center;">
+													<h3>LOCAL ORGANIZING COMMITTEE</h3>
 												</header>
+												
+												<div class="committee-grid">
+													<div class="committee-card loc-card"><span class="member-name">Marianna Annunziatella</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - IASF Milano</span></div>
+													<div class="committee-card loc-card"><span class="member-name">Iacopo Bartalucci</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - IASF Milano</span></div>
+													<div class="committee-card loc-card"><span class="member-name">Sabrina De Grandi</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - OA Brera</span></div>
+													<div class="committee-card loc-card"><span class="member-name">Fabio Gastaldello</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - IASF Milano</span></div>
+													<div class="committee-card loc-card"><span class="member-name">Simona Ghizzardi</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - IASF Milano</span></div>
+													<div class="committee-card loc-card"><span class="member-name">Claudio Grillo</span><span class="member-affiliation"><i class="fa fa-institution"></i> Università degli Studi di Milano</span></div>
+													<div class="committee-card loc-card"><span class="member-name">Lorenzo Lovisari</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - IASF Milano</span></div>
+													<div class="committee-card loc-card"><span class="member-name">Mariachiara Rossetti</span><span class="member-affiliation"><i class="fa fa-institution"></i> INAF - IASF Milano</span></div>
+												</div>
 											</section>
 										</div>
+									</div>
 								</section>
-							</div>
+						</div>
 					</div>
 
-						<div class="wrapper style3">
+					<div class="wrapper style3">
 						<div class="inner">
 							<div class="container">
 								<div class="row">
@@ -261,8 +315,6 @@
 
 	</body>
 </html>
-
-
 
 
 
