@@ -1,0 +1,331 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<title>Gallery – Cluster5</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+
+			/* ── Featured group photo ── */
+			.featured-wrap {
+				position: relative;
+				border-radius: 8px;
+				overflow: hidden;
+				box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+				background: #e8edf2;
+			}
+			.featured-wrap img {
+				width: 100%;
+				height: auto;
+				display: block;
+			}
+			.featured-caption {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: linear-gradient(transparent, rgba(0,0,0,0.65));
+				color: #fff;
+				padding: 36px 22px 18px;
+				font-size: 1.05em;
+				font-weight: 600;
+				pointer-events: none;
+			}
+			.featured-badge {
+				display: inline-block;
+				background: #fc8403;
+				color: #fff;
+				font-size: 0.7em;
+				font-weight: 700;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				padding: 3px 10px;
+				border-radius: 3px;
+				margin-bottom: 6px;
+			}
+			.featured-placeholder {
+				width: 100%;
+				height: 420px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background: linear-gradient(135deg, #e8edf2 0%, #d0d8e0 100%);
+				color: #8a96a3;
+				gap: 10px;
+			}
+			.featured-placeholder i { font-size: 3em; color: #b0bbc5; }
+			.featured-placeholder span { font-size: 0.9em; }
+			.featured-placeholder small { font-size: 0.78em; opacity: 0.7; }
+
+			/* ── Photo grid ── */
+			.photo-grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+				gap: 16px;
+				margin-top: 30px;
+			}
+			.photo-item {
+				position: relative;
+				border-radius: 6px;
+				overflow: hidden;
+				box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+				aspect-ratio: 4/3;
+				background: #eaeff4;
+			}
+			.photo-item img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				display: block;
+			}
+			.photo-placeholder {
+				width: 100%; height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+				background: linear-gradient(135deg, #e8edf2 0%, #d0d8e0 100%);
+				color: #8a96a3;
+				gap: 6px;
+			}
+			.photo-placeholder i { font-size: 1.8em; color: #b0bbc5; }
+			.photo-placeholder span { font-size: 0.78em; }
+			.photo-caption-bar {
+				position: absolute;
+				bottom: 0; left: 0; right: 0;
+				background: linear-gradient(transparent, rgba(0,0,0,0.55));
+				color: #fff;
+				font-size: 0.78em;
+				padding: 22px 10px 8px;
+				pointer-events: none;
+			}
+
+			@media (max-width: 600px) {
+				.photo-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<div id="header-wrapper-home">
+				<div class="container">
+
+					<header id="header">
+						<div class="inner">
+							<div class="logo">
+								<a href="index.html" id="logo">
+									<img src="images/logo_nowriting.png" height="98%" width="100px">
+								</a>
+							</div>
+							<nav id="nav">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="participants.html">Participants</a></li>
+									<li><a href="abstract-and-registration.html">Abstract &amp; Registration</a></li>
+									<li>
+										<a href="#">Program</a>
+										<ul>
+											<li><a href="scientific_program.html">Scientific Program</a></li>
+											<li><a href="posters.html">List of Posters</a></li>
+											<li><a href="social.html">Social Events</a></li>
+										</ul>
+									</li>
+									<li><a href="venue.html">Venue</a></li>
+									<li class="current_page_item"><a href="gallery.html">Gallery</a></li>
+								</ul>
+							</nav>
+						</div>
+					</header>
+
+					<div id="banner">
+						<h3 style="
+							font-size: 3rem;
+							color: #fc8403;
+							font-weight: 800;
+							letter-spacing: 0.15em;
+							margin-top: -0.25em;
+						">GALLERY</h3>
+						<h2 style="margin-top: -0.5em"><strong>Cluster 5 &middot; Milano, September 2026</strong></h2>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Main Wrapper -->
+			<div id="main-wrapper">
+
+				<!-- Featured group photo -->
+				<div class="wrapper style1">
+					<div class="inner">
+						<section class="container box feature1">
+							<div class="row">
+								<div class="col-12">
+									<header class="first major">
+										<h3 style="margin-top: -20px; padding: 0;">Group Photo</h3>
+									</header>
+
+									<div class="featured-wrap">
+										<img
+											src="images/IMG20260910162220.jpg"
+											alt="Cluster 5 group photo, Milano September 2026"
+											onerror="this.style.display='none'; document.getElementById('featured-ph').style.display='flex';"
+										>
+										<div class="featured-placeholder" id="featured-ph" style="display:none;">
+											<i class="fa fa-users"></i>
+											<span>group_photo.jpg</span>
+											<small>Add your image at images/gallery/group_photo.jpg</small>
+										</div>
+										<div class="featured-caption">
+											<span class="featured-badge">&#9733; Group Photo</span><br>
+											Cluster 5 participants &middot; Milano, 8–11 September 2026
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+
+				<!-- Photo grid -->
+				<div class="wrapper style2">
+					<div class="inner">
+						<section class="container box feature2">
+							<div class="row">
+								<div class="col-12">
+									<header class="major" style="text-align: center;">
+										<h3>More Photos</h3>
+									</header>
+
+									<div class="photo-grid">
+
+										<!-- PHOTO 1 -->
+										<div class="photo-item">
+											<img src="images/IMG_1628.jpg" alt="Conference dinner"
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_01.jpg</span></div>
+											<div class="photo-caption-bar">Conference dinner</div>
+										</div>
+
+										<!-- PHOTO 2 -->
+										<div class="photo-item">
+											<img src="images/IMG_1626.jpg" alt="Conference dinner"
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_02.jpg</span></div>
+											<div class="photo-caption-bar">Conference dinner</div>
+										</div>
+
+										<!-- PHOTO 3 -->
+										<div class="photo-item">
+											<img src="images/IMG_1625.jpg" alt=""
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_03.jpg</span></div>
+											<div class="photo-caption-bar">Conference dinner</div>
+										</div>
+
+										<!-- PHOTO 4 -->
+										<div class="photo-item">
+											<img src="images/gallery/photo_04.jpg" alt=""
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_04.jpg</span></div>
+											<div class="photo-caption-bar">Photo 4</div>
+										</div>
+
+										<!-- PHOTO 5 -->
+										<div class="photo-item">
+											<img src="images/gallery/photo_05.jpg" alt=""
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_05.jpg</span></div>
+											<div class="photo-caption-bar">Photo 5</div>
+										</div>
+
+										<!-- PHOTO 6 -->
+										<div class="photo-item">
+											<img src="images/gallery/photo_06.jpg" alt=""
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_06.jpg</span></div>
+											<div class="photo-caption-bar">Photo 6</div>
+										</div>
+
+										<!-- PHOTO 7 -->
+										<div class="photo-item">
+											<img src="images/gallery/photo_07.jpg" alt=""
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_07.jpg</span></div>
+											<div class="photo-caption-bar">Photo 7</div>
+										</div>
+
+										<!-- PHOTO 8 -->
+										<div class="photo-item">
+											<img src="images/gallery/photo_08.jpg" alt=""
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_08.jpg</span></div>
+											<div class="photo-caption-bar">Photo 8</div>
+										</div>
+
+										<!-- PHOTO 9 -->
+										<div class="photo-item">
+											<img src="images/gallery/photo_09.jpg" alt=""
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_09.jpg</span></div>
+											<div class="photo-caption-bar">Photo 9</div>
+										</div>
+
+										<!-- PHOTO 10 -->
+										<div class="photo-item">
+											<img src="images/gallery/photo_10.jpg" alt=""
+												 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+											<div class="photo-placeholder" style="display:none;"><i class="fa fa-image"></i><span>photo_10.jpg</span></div>
+											<div class="photo-caption-bar">Photo 10</div>
+										</div>
+
+									</div><!-- end .photo-grid -->
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+
+			</div><!-- end #main-wrapper -->
+
+			<!-- Footer -->
+			<div id="footer-wrapper-logo">
+				<footer id="footer" class="container">
+					<div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; color:white;">
+						<div style="max-width:50%;">
+							<div>
+								<h2>Contact us <i class="fa fa-envelope" style="font-size:20px; color:white"></i></h2>
+								<dl class="contact">
+									<dt>LOC:</dt>
+									<dd><a href="mailto:galaxyclustersconf@gmail.com">galaxyclustersconf@gmail.com</a></dd>
+								</dl>
+							</div>
+							<div style="margin-top:15px;">
+								<h2 style="font-size:18px; margin:0 0 2px 0;">Website credits:</h2>
+								<p style="font-size:14px; margin:0;">M. Annunziatella</p>
+							</div>
+							<div style="margin-top:12px;">
+								<h2 style="font-size:18px; margin:0 0 2px 0;">Website last update:</h2>
+								<p style="font-size:14px; margin:0;">
+									<script>document.write(new Date(document.lastModified));</script>
+								</p>
+							</div>
+						</div>
+					</div>
+				</footer>
+			</div>
+
+		</div><!-- end #page-wrapper -->
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
